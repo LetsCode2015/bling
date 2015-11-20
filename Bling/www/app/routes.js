@@ -33,7 +33,7 @@ appModule.run(function ($ionicPlatform) {
          views: {
              'menuContent': {
                  templateUrl: "app/dashboard/partials/dashboard-list.html",
-                 controller: 'dashboard-list-controller'
+                 controller: 'dashboard-list-all-controller'
              }
          }
      });
