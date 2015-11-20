@@ -1,30 +1,69 @@
 ﻿<ion-side-menus>
 
     <ion-side-menu-content>
-        <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+        <ion-nav-bar class="bar-stable nav-title-slide-ios7 bar-assertive">
             <ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i> Back</ion-nav-back-button>
         </ion-nav-bar>
         <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+
+
+
+        <div class="tabs-striped tabs-background-dark tabs-color-light">
+            <div class="tabs">
+                <a class="tab-item active" href="#">
+                    <i class="icon ion-home"></i>
+                    Test
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-star"></i>
+                    Favorites
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-gear-a"></i>
+                    Settings
+                </a>
+            </div>
+        </div>
+
     </ion-side-menu-content>
 
     <ion-side-menu side="left">
-        <header class="bar bar-header bar-stable">
-            <h1 class="title">Left</h1>
-        </header>
+
+        <!--       <div class="list">
+
+                   <a class="item item-avatar" href="#">
+                       <img src="venkman.jpg">
+                       <h2>Venkman</h2>
+                       <p>Back off, man. I'm a scientist.</p>
+                   </a>
+
+                   ...
+
+               </div>-->
+
         <ion-content class="has-header">
             <ion-list>
-                <ion-item menu-close ng-click="login()">
-                    Login
-                </ion-item>
+                <!--      <ion-item menu-close ng-click="login()">
+                          Login
+                      </ion-item>-->
                 <ion-item menu-close href="#/app/search">
-                    Search
+                    <a class="item item-avatar" href="#">
+                        <img src="venkman.jpg">
+                        <h2>Venkman</h2>
+                        <p>Back off, man. I'm a scientist.</p>
+                    </a>
                 </ion-item>
-                <ion-item menu-close href="#/app/browse">
-                    Browse
+
+
+                <ion-item menu-close href="#/app/search">
+                    Dashboard
                 </ion-item>
-                <ion-item menu-close href="#/app/playlists">
-                    Playlists
-                </ion-item>
+                <!--                <ion-item menu-close href="#/app/browse">
+                                    Browse
+                                </ion-item>
+                                <ion-item menu-close href="#/app/playlists">
+                                    Playlists
+                                </ion-item>-->
             </ion-list>
         </ion-content>
     </ion-side-menu>
