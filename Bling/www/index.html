@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="app" ng-cloak>
 <head>
     <meta charset="utf-8" />
 
@@ -11,15 +11,25 @@
     <title>Bling</title>
 
     <!-- Bling references -->
-    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet"/>
+
+    <script src="lib/ionic/release/js/ionic.bundle.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="app/app.js"></script>
 </head>
-<body>
-    <p>Hello, your application is ready!</p>
+<body >
+
+
+<div ng-controller="Test">
+    <p>Hello,{{greeting}}</p>
+</div>
 
     <!-- Cordova reference, this is added to your app when it's built. -->
     <script src="cordova.js"></script>
     <script src="scripts/platformOverrides.js"></script>
 
-    <script src="scripts/index.js"></script>
+
+<!--    <script src="scripts/index.js"></script>-->
+
 </body>
 </html>
