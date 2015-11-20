@@ -30,8 +30,20 @@ appModule.run(function ($ionicPlatform) {
      })
      .state('app.playlists', {
          url: "/playlists",
-         views: {
-             'menuContent': {
+         views:  {
+            /*'menuContent': {
+                 templateUrl: "app/dashboard/partials/dashboard-list.html",
+                 controller: 'dashboard-list-all-controller'
+             },*/
+             myDashboardTab: {
+                 templateUrl: "app/dashboard/partials/dashboard-list.html",
+                 controller: 'dashboard-list-my-controller'
+             },
+             favDashboardTab: {
+                 templateUrl: "app/dashboard/partials/dashboard-list.html",
+                 controller: 'dashboard-list-fav-controller'
+             },
+             allDashboardTab: {
                  templateUrl: "app/dashboard/partials/dashboard-list.html",
                  controller: 'dashboard-list-all-controller'
              }
