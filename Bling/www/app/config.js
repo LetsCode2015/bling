@@ -1,7 +1,6 @@
-﻿angular.module('app', ['ionic', "app.dashboard"]);
+﻿var appModule = angular.module('app');
 
-/*
-.run(function ($ionicPlatform) {
+appModule.run(function ($ionicPlatform) {
     $ionicPlatform.ready(function () {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
@@ -19,7 +18,7 @@
 
 .config(function ($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
 
-    $ionicConfigProvider.tabs.position('bottom'); //bottom
+    $ionicConfigProvider.tabs.position('bottom');
 
 
     $stateProvider
@@ -27,7 +26,7 @@
          url: "/app",
          abstract: true,
          templateUrl: "app/dashboard/partials/dashboard-layout.html",
-         controller: 'dashboard-controller'
+         controller: 'board-controller'
      })
      .state('app.playlists', {
          url: "/playlists",
@@ -43,4 +42,3 @@
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/app/playlists');
 });
-*/

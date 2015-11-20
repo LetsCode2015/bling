@@ -3,6 +3,7 @@
   "dependencies": {
     "ionic" : "*",
     "jquery" : "*",
-    "ngCordova" : "*"
+    "ngCordova": "*",
+    "ng-cordova-oauth" : "*"
   }
 }
