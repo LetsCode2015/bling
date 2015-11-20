@@ -1,1 +1,1 @@
-﻿angular.module('app', ['ionic', "app.dashboard"]);
+﻿angular.module('app', ['ionic', 'app.shared', 'app.dashboard']);

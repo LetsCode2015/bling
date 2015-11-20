@@ -1,10 +1,10 @@
 ﻿// dashboardService
 
-var module = angular.module('app.dashboard');
+var module = angular.module('app.shared');
 
-module.factory('dashboardService', function () {
+module.factory('boardService', function () {
     var serviceInstance = {
-        getDashboards: function (category) {
+        getBoards: function (category) {
             var description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat';
             return [
                 {
