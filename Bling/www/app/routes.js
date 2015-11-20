@@ -28,13 +28,9 @@ appModule.run(function ($ionicPlatform) {
          templateUrl: "app/dashboard/partials/dashboard-layout.html",
          controller: 'board-controller'
      })
-     .state('app.playlists', {
-         url: "/playlists",
+     .state('app.dashboard', {
+         url: "/dashboard",
          views:  {
-            /*'menuContent': {
-                 templateUrl: "app/dashboard/partials/dashboard-list.html",
-                 controller: 'dashboard-list-all-controller'
-             },*/
              myDashboardTab: {
                  templateUrl: "app/dashboard/partials/dashboard-list.html",
                  controller: 'dashboard-list-my-controller'
@@ -52,5 +48,5 @@ appModule.run(function ($ionicPlatform) {
 
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/playlists');
+    $urlRouterProvider.otherwise('/app/dashboard');
 });
