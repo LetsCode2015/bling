@@ -1,9 +1,9 @@
-﻿// taskService
+﻿// dashboardService
 
 var module = angular.module('app.shared');
 
-module.factory('taskService', function ($http) {
-    var baseUrl = 'http://192.168.0.106:50313/task/';
+module.factory('reminderService', function ($http) {
+    var baseUrl = 'http://192.168.0.106:50313/reminder/';
     var serviceInstance = {
         getAll: function (successCallback) {
             $http.get(baseUrl + 'getall')
