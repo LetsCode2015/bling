@@ -2,7 +2,7 @@
 
 var module = angular.module('app.shared');
 
-module.factory('taskService', function ($http) {
+module.factory('categoryService', function ($http) {
     var baseUrl = 'http://192.168.0.106:50313/category/';
     var serviceInstance = {
         getAll: function (successCallback) {
