@@ -1,0 +1,45 @@
+﻿<ion-view>
+    <ion-content style="padding: 0 10px 0 10px">
+        <h4>{{name}} [In progress]</h4>
+
+        <p style="font-size: 14px">
+            {{description}}
+        </p>
+
+        <div class="list">
+
+            <div class="item item-divider">
+                Click below to change status
+            </div>
+
+
+            <a class="item item-icon-left task-new" href="#">
+                <i class="icon ion-asterisk" style="font-size: 22px"></i>
+                <span >New</span>
+            </a>
+
+            <a class="item item-icon-left task-inprogress" href="#">
+                <i class="icon ion-gear-a" style="font-size: 22px"></i>
+                In progress
+            </a>
+
+
+
+            <a class="item item-icon-left task-completed" href="#">
+                <i class="icon ion-checkmark" style="font-size: 22px"></i>
+                Completed
+                <!--       <span class="item-note">
+                           Grammy
+                       </span>-->
+            </a>
+
+            <a class="item item-icon-left task-rejected" href="#">
+                <i class="icon ion-close-circled " style="font-size: 22px"></i>
+                Rejected
+                <!--                <span class="badge badge-assertive">0</span>-->
+            </a>
+
+        </div>
+
+    </ion-content>
+</ion-view>
