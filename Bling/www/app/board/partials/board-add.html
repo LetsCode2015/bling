@@ -1,17 +1,21 @@
 ﻿<ion-view>
     <ion-content>
         <form name="authorizationForm" novalidate="">
-            <div class="newBoard">
+            <div class="newBoard" >
                 <label class="item item-input item-floating-label">
-                    <span class="input-label">Board name</span>
-                    <input type="text" placeholder="Put here board name" ng-model="newBoard.name">
+                    <div class="row" style="background-color: #3E3E3E">
+                        <span class="input-label" style="color: white">Board name</span>
+                    </div>
+                    <input type="text" placeholder="Put here board name" ng-model="newBoard.name" >
                 </label>
                 <label class="item item-input item-floating-label">
-                    <span class="input-label">Board description</span>
-                    <input type="text" placeholder="Put here short board descroption" ng-model="newBoard.description">
+                    <div class="row" style="background-color: #3E3E3E">
+                        <span class="input-label" style="color: white">Board description</span>
+                    </div>
+                    <input type="text" placeholder="Put here short board descroption" ng-model="newBoard.description" >
                 </label>
             </div>
-            <button class="button" ng-click="createBoard()">
+            <button class="button button-full button-positive" ng-click="createBoard()" style="background-color: rgb(239, 71, 58); border-color: rgb(239, 71, 58); font-size: 12px; padding: 0 20px 0 20px">
                 <i class="icon ion-loading-c"></i> Create board
             </button>
         </form>
