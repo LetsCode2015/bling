@@ -11,7 +11,7 @@
     <ion-content class="has-header" style="background-color: #EAEAEA;">
 
         <ion-list ng-repeat="item in dashboards" style="background-color: red;">
-            <div class="list card card-positive" style="margin-bottom: 0">
+            <div class="list card card-positive" style="margin-bottom: 0;">
 
                 <div class="row" style="background-color: #3E3E3E">
                     <!-- <div class="col"><i class="icon ion-clipboard" style="font-size: 40px;"></i></div>-->
@@ -20,7 +20,7 @@
                     <h5 style="color: white">{{item.name}}</h5>
                 </div>
 
-                <div class="item item-body" style="border: none; padding: 0 10px 0 10px">
+                <div class="item item-body" style="border: none; padding: 0 10px 15px 10px">
                     <!-- <img class="full-image" src="delorean.jpg">-->
                     <p>
                         {{item.description}}
@@ -30,8 +30,22 @@
                         <a href="#" class="subdued">5 Comments</a>
                     </p>-->
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col" style="text-align: right">
+                        <button ng-click="showBoard(item.id)" style="background-color: rgb(239, 71, 58); border-color: rgb(239, 71, 58); font-size: 12px; padding: 0 20px 0 20px"
+                                class="button icon-left button-positive button-small">
+                            Details
+                        </button>
+                    </div>
+                </div>-->
+
+                <div class="row">
+                    <div class="col col-75">
+                        <a class="button button-small button-icon icon ion-social-facebook" style="font-size: 12px"></a>
+                        <a class="button button-small button-icon icon ion-social-twitter" style="font-size: 20px"></a>
+                        <a class="button button-small button-icon icon ion-social-googleplus" style="font-size: 20px"></a>
+                    </div>
+                    <div class="col">
                         <button ng-click="showBoard(item.id)" style="background-color: rgb(239, 71, 58); border-color: rgb(239, 71, 58); font-size: 12px; padding: 0 20px 0 20px"
                                 class="button icon-left button-positive button-small">
                             Details
