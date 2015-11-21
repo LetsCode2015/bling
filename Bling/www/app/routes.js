@@ -86,6 +86,15 @@ appModule.run(function ($ionicPlatform) {
                 controller: 'task-controller'
             }
         }
+    })
+    .state('tasks.add', {
+        url: "/tasks/add",
+        views: {
+            taskPlaceholder: {
+                templateUrl: "app/task/partials/task-add.html",
+                controller: 'task-add-controller'
+            }
+        }
     });
 
     // if none of the above states are matched, use this as the fallback
