@@ -4,7 +4,7 @@ module.controller('board-add-controller', function ($scope, $ionicHistory, $ioni
     $scope.newBoard = {};
 
     $scope.createBoard = function () {
-        boardService.addBoard($scope.newBoard, function (boardId) {
+        boardService.add($scope.newBoard, function (boardId) {
             $scope.newBoard.id = boardId;
             $state.go('app.dashboard', {}, { reload: true });
         });

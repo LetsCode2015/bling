@@ -11,6 +11,14 @@ module.factory('boardService', function ($http) {
                      successCallback(success.data);
                 });
         },
+        getFav: function (successCallback) {
+            $http.get(baseUrl + 'getfav')
+                .then(function (success) { successCallback(success.data); });
+        },
+        getMy: function (successCallback) {
+            $http.get(baseUrl + 'getmy')
+                .then(function (success) { successCallback(success.data); });
+        },
         get: function (id, successCallback) {
             $http.get(baseUrl + 'get/' + id)
                 .then(function (success) { successCallback(success.data); });
