@@ -51,7 +51,10 @@ module.controller('board-controller', function ($scope, $ionicHistory, $ionicNav
     };
 
 
+    $scope.gotoTaskDetails = function() {
 
+        $state.go('tasks.details');
+    };
 
 
     $scope.goBack = function () {

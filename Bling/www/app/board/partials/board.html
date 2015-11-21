@@ -11,7 +11,7 @@
             <div class="item item-divider">
                 Tasks
             </div>
-            <a ng-repeat="task in tasks" class="item item-avatar {{task.statusClassName}}"  href="#" style="padding: 5px; padding-top: 0">
+            <a ng-repeat="task in tasks" class="item item-avatar {{task.statusClassName}}"  ng-click="gotoTaskDetails()" style="padding: 5px; padding-top: 0">
                 <div class="row">
                     <div class="col col-75">
                         <h2>{{task.title}}</h2>

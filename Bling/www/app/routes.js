@@ -45,23 +45,7 @@ appModule.run(function ($ionicPlatform) {
              }
          }
      })
-/*         .state('app.details', {
-             url: "/dashboard/details",
-             views: {
-                 myDashboardTab: {
-                     templateUrl: "app/board/partials/board-layout.html",
-                     controller: 'dashboard-list-my-controller'
-                 },
-                 favDashboardTab: {
-                     templateUrl: "app/board/partials/board-layout.html",
-                     controller: 'dashboard-list-fav-controller'
-                 },
-                 allDashboardTab: {
-                     templateUrl: "app/board/partials/board-layout.html",
-                     controller: 'dashboard-list-all-controller'
-                 }
-             }
-         })*/
+
 
 
     .state('board', {
@@ -79,8 +63,21 @@ appModule.run(function ($ionicPlatform) {
         }
     })
 
-    ;
 
+    .state('tasks', {
+        url: "/tasks",
+        abstract: true,
+        templateUrl: "app/tasks/partials/task-layout.html",
+        controller: 'task-controller'
+    }).state('tasks.details', {
+        url: "/tasks/details/:taskId",
+        views: {
+            boardPlaceholder: {
+                templateUrl: "app/tasks/partials/task.html",
+                controller: 'task-controller'
+            }
+        }
+    });
 
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/app/dashboard');
