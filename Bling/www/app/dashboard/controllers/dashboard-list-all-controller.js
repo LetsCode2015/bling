@@ -14,4 +14,8 @@ module.controller('dashboard-list-all-controller', function ($scope, $state, boa
     $scope.gotoDashboard = function () {
         $state.go('app.dashboard');
     };
+
+    $scope.test1 = function () {
+        $state.go('board.add');
+    };
 });
