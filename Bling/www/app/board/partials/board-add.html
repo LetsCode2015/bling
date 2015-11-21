@@ -1,5 +1,19 @@
 ﻿<ion-view>
     <ion-content>
-     ADD BOARD !!!
+        <form name="authorizationForm" novalidate="">
+            <div class="newBoard">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Board name</span>
+                    <input type="text" placeholder="Put here board name" ng-model="newBoard.name">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Board description</span>
+                    <input type="text" placeholder="Put here short board descroption" ng-model="newBoard.description">
+                </label>
+            </div>
+            <button class="button" ng-click="createBoard()">
+                <i class="icon ion-loading-c"></i> Create board
+            </button>
+        </form>
     </ion-content>
 </ion-view>

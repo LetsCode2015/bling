@@ -2,8 +2,8 @@
 
 var module = angular.module('app.shared');
 
-module.factory('boardService', function ($http) {
-    var baseUrl = 'http://192.168.0.106:50313/board/';
+module.factory('taskService', function ($http) {
+    var baseUrl = 'http://192.168.0.106:50313/task/';
     var serviceInstance = {
         getAll: function (successCallback) {
             $http.get(baseUrl + 'getall')
