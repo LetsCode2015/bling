@@ -10,7 +10,7 @@ module.factory('boardService', function ($http) {
                 .then(function (success) { successCallback(success.data); });
         },
         get: function (id, successCallback) {
-            $http.get(baesUrl + 'get/' + id)
+            $http.get(baseUrl + 'get/' + id)
                 .then(function (success) { successCallback(success.data); });
         },
         add: function (item, successCallback) {
