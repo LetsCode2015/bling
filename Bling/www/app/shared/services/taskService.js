@@ -1,4 +1,4 @@
-﻿// dashboardService
+﻿// taskService
 
 var module = angular.module('app.shared');
 

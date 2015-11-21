@@ -4,7 +4,7 @@ module.controller('board-controller', function ($scope, $ionicHistory, $ionicNav
 
     if ($state.params.boardId) {
         var boardId = $state.params.boardId;
-//        var board = boardService.getBoard(boardId);
+        //        var board = boardService.getBoard(boardId);
 
         boardService.getBoard(boardId, function (dashboards) {
             var board = dashboards;
@@ -51,9 +51,9 @@ module.controller('board-controller', function ($scope, $ionicHistory, $ionicNav
     };
 
 
-    $scope.gotoTaskDetails = function() {
+    $scope.gotoTaskDetails = function (taskId) {
 
-        $state.go('tasks.details');
+        $state.go('tasks.details', { taskId: taskId });
     };
 
 

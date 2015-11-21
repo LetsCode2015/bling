@@ -79,7 +79,7 @@ appModule.run(function ($ionicPlatform) {
         templateUrl: "app/task/partials/task-layout.html",
         controller: 'task-controller'
     }).state('tasks.details', {
-        url: "/tasks/details",
+        url: "/tasks/details/:taskId",
         views: {
             taskPlaceholder: {
                 templateUrl: "app/task/partials/task.html",
