@@ -1,9 +1,13 @@
 {
   "name": "Bling",
   "dependencies": {
-    "ionic" : "*",
-    "jquery" : "*",
+    "ionic": "*",
+    "jquery": "*",
     "ngCordova": "*",
-    "ng-cordova-oauth" : "*"
+    "ng-cordova-oauth": "*",
+    "angular-resource": "*"
+  },
+  "resolutions": {
+    "angular": ">= 1.2.23"
   }
 }
