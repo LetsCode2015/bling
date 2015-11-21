@@ -2,16 +2,22 @@
     <ion-nav-buttons side="left">
         <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
     </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button icon ion-plus"></button>
+    </ion-nav-buttons>
+
+    
+
     <ion-content class="has-header" style="background-color: #EAEAEA;">
 
-        <ion-list ng-repeat="item in dashboards" style="background-color: red; ">
+        <ion-list ng-repeat="item in dashboards" style="background-color: red;">
             <div class="list card card-positive" style="margin-bottom: 0">
 
                 <div class="row" style="background-color: #3E3E3E">
-                    <!--                        <div class="col"><i class="icon ion-clipboard" style="font-size: 40px;"></i></div>-->
-                    <!-- <div class="col-20 col-80"><h6>{{item.title}}</h4></div>-->
+                    <!-- <div class="col"><i class="icon ion-clipboard" style="font-size: 40px;"></i></div>-->
+                    <!-- <div class="col-20 col-80"><h6>{{item.name}}</h4></div>-->
 
-                    <h5 style="color: white">{{item.title}}</h5>
+                    <h5 style="color: white">{{item.name}}</h5>
                 </div>
 
                 <div class="item item-body" style="border: none; padding: 0 10px 0 10px">
@@ -19,18 +25,19 @@
                     <p>
                         {{item.description}}
                     </p>
-                    <!--      <p>
+                    <!-- <p>
                         <a href="#" class="subdued">1 Like</a>
                         <a href="#" class="subdued">5 Comments</a>
                     </p>-->
                 </div>
                 <div class="row">
-                    <div class="col" style="text-align: right"><button ng-click="showBoard(item.id)" style="background-color: rgb(239, 71, 58); border-color: rgb(239, 71, 58); font-size: 12px; padding: 0 20px 0 20px"
-                                                                        class="button icon-left button-positive button-small">Details</button></div>
+                    <div class="col" style="text-align: right">
+                        <button ng-click="showBoard(item.id)" style="background-color: rgb(239, 71, 58); border-color: rgb(239, 71, 58); font-size: 12px; padding: 0 20px 0 20px"
+                                class="button icon-left button-positive button-small">
+                            Details
+                        </button>
+                    </div>
                 </div>
- 
-           
-
             </div>
         </ion-list>
     </ion-content>
