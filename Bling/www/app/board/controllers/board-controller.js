@@ -6,7 +6,7 @@ module.controller('board-controller', function ($scope, $ionicHistory, $ionicNav
         var boardId = $state.params.boardId;
 //        var board = boardService.getBoard(boardId);
 
-        boardService.getBoard(boardId, function (dashboards) {
+        boardService.get(boardId, function (dashboards) {
             var board = dashboards;
 
             $scope.name = board.name;
@@ -28,14 +28,14 @@ module.controller('board-controller', function ($scope, $ionicHistory, $ionicNav
                         statusName: 'Completed',
                         statusClassName: 'task-completed'
                     };
-                } else //if (Number(status) === 3) {
+                } else //if (Number(status) === 3) {}
                 {
                     return {
                         statusName: 'Rejected',
                         statusClassName: 'task-rejected'
                     };
                 }
-            }
+            };
 
             $scope.tasks = [];
             _.each(board.tasks, function (item) {
@@ -45,11 +45,7 @@ module.controller('board-controller', function ($scope, $ionicHistory, $ionicNav
                 $scope.tasks.push(item);
             });
         });
-
-
-
     };
-
 
     $scope.gotoTaskDetails = function() {
 

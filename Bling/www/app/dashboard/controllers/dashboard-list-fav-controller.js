@@ -3,7 +3,7 @@
 module.controller('dashboard-list-fav-controller', function ($scope, boardService, $state) {
     $scope.test = "hello world";
 
-    boardService.getBoards("fav", function (dashboards) {
+    boardService.getFav(function (dashboards) {
         $scope.dashboards = dashboards;
     });
 
