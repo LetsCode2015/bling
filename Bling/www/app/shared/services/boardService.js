@@ -9,22 +9,85 @@ module.factory('boardService', function () {
         {
             id: 0,
             title: 'Dashboard1',
-            description: description
+            description: description,
+            tasks: [
+                {
+                    title: 'task1',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci',
+                    status: 0
+                },
+                {
+                    title: 'task2',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci',
+                    status: 2
+                },
+                {
+                    title: 'task2',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci',
+                    status: 3
+                },
+                {
+                    title: 'task2',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci',
+                    status: 1
+                },
+                {
+                    title: 'task2',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci',
+                    status: 0
+                }
+            ]
         },
         {
             id: 1,
             title: 'Dashboard2',
-            description: description
+            description: description,
+            tasks: [
+                {
+                    title: 'task1',
+                    description: 'task1',
+                    status: 0
+                },
+                {
+                    title: 'task2',
+                    description: 'task2',
+                    status: 0
+                }
+            ]
         },
         {
             id: 2,
             title: 'Dashboard3',
-            description: description
+            description: description,
+            tasks: [
+                {
+                    title: 'task1',
+                    description: 'task1',
+                    status: 0
+                },
+                {
+                    title: 'task2',
+                    description: 'task2',
+                    status: 0
+                }
+            ]
         },
         {
             id: 3,
             title: 'Dashboard4',
-            description: description
+            description: description,
+            tasks: [
+                {
+                    title: 'task1',
+                    description: 'task1',
+                    status: 0
+                },
+                {
+                    title: 'task2',
+                    description: 'task2',
+                    status: 0
+                }
+            ]
         },
         {
             id: 4,

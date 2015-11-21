@@ -4,3 +4,23 @@
 /*.tabs-background-black {
     background-color: black;
 }*/
+
+.task-new {
+    border-left-color: #DEDE53;
+    border-left-width: 5px;
+}
+
+.task-inprogress {
+    border-left-color: #9696D0;
+    border-left-width: 5px;
+}
+
+.task-completed {
+    border-left-color: yellowgreen;
+    border-left-width: 5px;
+}
+
+.task-rejected {
+    border-left-color: #EA655B;
+    border-left-width: 5px;
+}
