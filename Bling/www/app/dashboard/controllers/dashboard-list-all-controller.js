@@ -7,7 +7,6 @@ module.controller('dashboard-list-all-controller', function ($scope, $state, boa
     $scope.dashboards = boardService.getBoards("all");
 
     $scope.showBoard = function (boardId) {
-        $state.go('board.details');
-//        $state.go('board.details', { boardId: boardId });
+        $state.go('board.details', { boardId: boardId });
     }
 });

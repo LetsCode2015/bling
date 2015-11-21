@@ -67,14 +67,14 @@ appModule.run(function ($ionicPlatform) {
     .state('board', {
         url: "/board",
         abstract: true,
-        templateUrl: "app/board/partials/board-layout.html"
-//        controller: 'board-controller'
+        templateUrl: "app/board/partials/board-layout.html",
+        controller: 'board-controller'
     }).state('board.details', {
-        url: "/board/details",
+        url: "/board/details/:boardId",
         views: {
             boardPlaceholder: {
-                templateUrl: "app/board/partials/board.html"
-//                controller: 'dashboard-list-my-controller'
+                templateUrl: "app/board/partials/board.html",
+                controller: 'board-controller'
             }
         }
     })
