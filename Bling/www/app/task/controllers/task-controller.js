@@ -8,7 +8,7 @@ module.controller('task-controller', function ($scope, $ionicHistory, $ionicNavB
     if ($state.params.taskId) {
         var taskId = $state.params.taskId;
 
-        taskService.getTask(taskId, function(task) {
+        taskService.get(taskId, function(task) {
             $scope.title = task.title;
             $scope.description = task.description;
 

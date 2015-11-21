@@ -3,7 +3,7 @@
 module.controller('dashboard-list-all-controller', function ($scope, $state, boardService) {
     $scope.test = "hello world";
 
-    boardService.getAll(function (dashboards) {
+    boardService.getAll("all", function (dashboards) {
         $scope.dashboards = dashboards;
     });
 
