@@ -10,4 +10,8 @@ module.controller('dashboard-list-fav-controller', function ($scope, boardServic
     $scope.showBoard = function (boardId) {
         $state.go('board.details', { boardId: boardId });
     }
+
+    $scope.addBoard = function () {
+        $state.go('board.add');
+    }
 });
