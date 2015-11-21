@@ -10,4 +10,8 @@ module.controller('dashboard-list-my-controller', function ($scope, boardService
     $scope.showBoard = function (boardId) {
         $state.go('board.details', { boardId: boardId });
     }
+
+    $scope.addBoard = function () {
+        $state.go('board.add');
+    }
 });
