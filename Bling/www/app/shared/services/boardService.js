@@ -3,21 +3,23 @@
 var module = angular.module('app.shared');
 
 module.factory('boardService', function ($http) {
+    var baseUrl = backendUrl + 'http://localhost:50313/board/';
     var serviceInstance = {
+
         getBoards: function (category, successCallback) {
             if (category === "my")
-                $http.get('http://localhost:50313/board/getall')
+                $http.get(baseUrl + 'getall')
                     .then(function (success) { successCallback(success.data); });
             else
-                $http.get('http://localhost:50313/board/getall')
+                $http.get(baseUrl +'getall')
                     .then(function (success) { successCallback(success.data); });
         },
         getBoard: function (boardId, successCallback) {
-            $http.get('http://localhost:50313/board/get/' + boardId)
+            $http.get(baseUrl + 'get/' + boardId)
                 .then(function (success) { successCallback(success.data); });
         },
         addBoard: function (newBoard, successCallback) {
-            $http.post('http://localhost:50313/board/create', newBoard)
+            $http.post(baseUrl + 'create', newBoard)
                 .then(function (success) { successCallback(success.data); });
         },
     };
