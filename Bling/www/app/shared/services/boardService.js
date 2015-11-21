@@ -5,9 +5,11 @@ var module = angular.module('app.shared');
 module.factory('boardService', function ($http) {
     var baseUrl = 'http://192.168.0.106:50313/board/';
     var serviceInstance = {
-        getAll: function (successCallback) {
+        getAll: function (category, successCallback) {
             $http.get(baseUrl + 'getall')
-                .then(function (success) { successCallback(success.data); });
+                .then(function(success) {
+                     successCallback(success.data);
+                });
         },
         getFav: function (successCallback) {
             $http.get(baseUrl + 'getfav')

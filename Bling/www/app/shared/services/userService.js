@@ -5,6 +5,10 @@ var module = angular.module('app.shared');
 module.factory('userService', function ($http) {
     var baseUrl = 'http://192.168.0.106:50313/user/';
     var serviceInstance = {
+        singUp: function (user, successCallback) {
+            $http.post(baseUrl + 'signup', user)
+                .then(function (success) { successCallback(success.data); });
+        },
         getAll: function (successCallback) {
             $http.get(baseUrl + 'getall')
                 .then(function (success) { successCallback(success.data); });
