@@ -10,4 +10,8 @@ module.controller('dashboard-list-all-controller', function ($scope, $state, boa
     $scope.showBoard = function (boardId) {
         $state.go('board.details', { boardId: boardId });
     }
+
+    $scope.gotoDashboard = function () {
+        $state.go('app.dashboard');
+    };
 });
