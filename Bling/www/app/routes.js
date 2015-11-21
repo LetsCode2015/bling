@@ -95,8 +95,13 @@ appModule.run(function ($ionicPlatform) {
                 controller: 'task-add-controller'
             }
         }
-    });
+    }).state('loging',
+    {
+        url: "/login",
+        templateUrl: "app/logingpage/partials/login.html",
+        controller: "authorize-controller"
+        });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/dashboard');
+    $urlRouterProvider.otherwise('/login');
 });

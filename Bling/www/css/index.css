@@ -24,3 +24,13 @@
     border-left-color: #EA655B;
     border-left-width: 5px;
 }
+
+.loging_button {
+    background: url(../img/signInGoogle.png);
+    background-size: cover; 
+    height:auto; 
+    width:auto; 
+    max-width:100%;
+    max-height:100%
+
+}
