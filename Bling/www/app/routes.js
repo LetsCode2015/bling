@@ -30,7 +30,7 @@ appModule.run(function ($ionicPlatform) {
      })
      .state('app.dashboard', {
          url: "/dashboard",
-         views:  {
+         views: {
              myDashboardTab: {
                  templateUrl: "app/dashboard/partials/dashboard-list.html",
                  controller: 'dashboard-list-my-controller'
@@ -44,7 +44,42 @@ appModule.run(function ($ionicPlatform) {
                  controller: 'dashboard-list-all-controller'
              }
          }
-     });
+     })
+/*         .state('app.details', {
+             url: "/dashboard/details",
+             views: {
+                 myDashboardTab: {
+                     templateUrl: "app/board/partials/board-layout.html",
+                     controller: 'dashboard-list-my-controller'
+                 },
+                 favDashboardTab: {
+                     templateUrl: "app/board/partials/board-layout.html",
+                     controller: 'dashboard-list-fav-controller'
+                 },
+                 allDashboardTab: {
+                     templateUrl: "app/board/partials/board-layout.html",
+                     controller: 'dashboard-list-all-controller'
+                 }
+             }
+         })*/
+
+
+    .state('board', {
+        url: "/board",
+        abstract: true,
+        templateUrl: "app/board/partials/board-layout.html"
+//        controller: 'board-controller'
+    }).state('board.details', {
+        url: "/board/details",
+        views: {
+            boardPlaceholder: {
+                templateUrl: "app/board/partials/board.html"
+//                controller: 'dashboard-list-my-controller'
+            }
+        }
+    })
+
+    ;
 
 
     // if none of the above states are matched, use this as the fallback

@@ -525,7 +525,15 @@
     "www\\app\\shared\\shared-module.js",
     "www\\app\\board\\board-module.js",
     "www\\app\\board\\partials\\board-layout.html",
-    "www\\app\\board\\partials\\board.html"
+    "www\\app\\board\\partials\\board.html",
+    "www\\lib\\angular-resource\\angular-resource.js",
+    "www\\lib\\angular-resource\\angular-resource.min.js",
+    "www\\lib\\angular-resource\\angular-resource.min.js.map",
+    "www\\lib\\angular-resource\\package.json",
+    "www\\lib\\angular-resource\\.bower.json",
+    "www\\lib\\angular-resource\\index.js",
+    "www\\lib\\angular-resource\\bower.json",
+    "www\\lib\\angular-resource\\README.md"
   ],
   "deletedFilesIos": [
     "www\\app\\dashboard\\partials\\board.html",
@@ -534,7 +542,9 @@
   ],
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
-  "changedFiles": [],
+  "changedFiles": [
+    "www\\app\\dashboard\\controllers\\dashboard-list-my-controller.js"
+  ],
   "deletedFiles": [],
   "addedPlugins": [],
   "deletedPlugins": []
