@@ -62,6 +62,15 @@ appModule.run(function ($ionicPlatform) {
             }
         }
     })
+    .state('board.add', {
+        url: "/board/add",
+        views: {
+            boardPlaceholder: {
+                templateUrl: "app/board/partials/board-add.html",
+                controller: 'board-add-controller'
+            }
+        }
+    })
 
 
     .state('tasks', {

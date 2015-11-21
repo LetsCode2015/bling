@@ -544,17 +544,15 @@
     "www\\lib\\ionic\\release\\fonts\\ionicons.svg",
     "www\\lib\\ionic\\js\\angular\\directive\\navDirection.js",
     "www\\lib\\ionic\\js\\angular\\controller\\viewController.js",
-    "www\\lib\\ionic\\scss\\_radio.scss"
+    "www\\lib\\ionic\\scss\\_radio.scss",
+    "www\\app\\board\\partials\\board-add.html",
+    "www\\app\\board\\controllers\\board-add-controller.js"
   ],
   "deletedFilesIos": [],
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
   "changedFiles": [
-    "www\\app\\dashboard\\controllers\\dashboard-layout-controller.js",
-    "www\\app\\dashboard\\partials\\dashboard-list.html",
-    "www\\app\\dashboard\\controllers\\dashboard-list-all-controller.js",
-    "www\\app\\dashboard\\controllers\\dashboard-list-my-controller.js",
-    "www\\app\\dashboard\\controllers\\dashboard-list-fav-controller.js"
+    "www\\app\\board\\controllers\\board-add-controller.js"
   ],
   "deletedFiles": [],
   "addedPlugins": [],
