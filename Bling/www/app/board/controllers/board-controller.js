@@ -6,7 +6,7 @@ module.controller('board-controller', function ($scope, $ionicHistory, $ionicNav
         var boardId = $state.params.boardId;
         //        var board = boardService.getBoard(boardId);
 
-        boardService.getBoard(boardId, function (dashboards) {
+        boardService.get(boardId, function (dashboards) {
             var board = dashboards;
 
             $scope.name = board.name;
